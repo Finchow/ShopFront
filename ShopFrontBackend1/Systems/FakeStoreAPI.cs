@@ -5,7 +5,7 @@ namespace ShopFrontBackend.Systems
 {
     public class FakeStoreAPI
     {
-        internal static List<Product>? FetchProducts()
+        public static List<Product> FetchProducts()
         {
             var client = new RestClient("https://fakestoreapi.com/");
             var request = new RestRequest("products");
